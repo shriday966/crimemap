@@ -1,7 +1,7 @@
 name: Daily Crime Data Update
 
 on:
-  workflow_dispatch:         # Allows manual trigger
+  workflow_dispatch:         # Manual trigger
   schedule:
     - cron: '0 0 * * *'       # Runs daily at midnight UTC
 
