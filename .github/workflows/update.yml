@@ -25,10 +25,13 @@ jobs:
         run: node scraper.js
 
       - name: Commit and Push
+        env:
+          GH_PAT: ${{ secrets.GH_PAT }}
         run: |
           git config --global user.name 'GitHub Bot'
           git config --global user.email 'bot@github.com'
           echo "node_modules/" >> .gitignore
           git add crimes.json || echo "No changes to crimes.json"
           git commit -m "Update crime data" || echo "Nothing to commit"
+          git remote set-url origin https://x-access-token:${GH_PAT}@github.com/${{ github.repository }}
           git push
