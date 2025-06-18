@@ -1,0 +1,13 @@
+{
+  "last_updated": "2025-06-18 13:29:09.316960",
+  "crimes": [
+    {
+      "title": "Robbery in Delhi",
+      "status": "Unsolved"
+    },
+    {
+      "title": "Fraud in Mumbai",
+      "status": "Solved"
+    }
+  ]
+}
