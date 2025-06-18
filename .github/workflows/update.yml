@@ -1,16 +1,16 @@
 name: Daily Crime Data Update
 
 on:
-  workflow_dispatch:
+  workflow_dispatch:         # Allows manual trigger
   schedule:
-    - cron: '0 0 * * *'  # Runs daily at midnight UTC
+    - cron: '0 0 * * *'       # Runs daily at midnight UTC
 
 jobs:
   update-crime-data:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repo
+      - name: Checkout repository
         uses: actions/checkout@v3
 
       - name: Set up Node.js
@@ -24,14 +24,14 @@ jobs:
       - name: Run scraper
         run: node scraper.js
 
-      - name: Commit and Push
+      - name: Commit and Push changes
         env:
           GH_PAT: ${{ secrets.GH_PAT }}
         run: |
           git config --global user.name 'GitHub Bot'
           git config --global user.email 'bot@github.com'
           echo "node_modules/" >> .gitignore
-          git add crimes.json || echo "No changes to crimes.json"
-          git commit -m "Update crime data" || echo "Nothing to commit"
+          git add crimes.json || echo "Nothing to add"
+          git commit -m "Daily crime data update" || echo "Nothing to commit"
           git remote set-url origin https://x-access-token:${GH_PAT}@github.com/${{ github.repository }}
-          git push
+          git push origin main
