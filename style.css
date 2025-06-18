@@ -1,0 +1,63 @@
+body {
+  font-family: 'Courier New', Courier, monospace;
+  margin: 0;
+  padding: 0;
+  background-color: #fdf6e3;
+  color: #000080;
+}
+
+header {
+  background-color: #ffffcc;
+  padding: 10px;
+  text-align: center;
+  border-bottom: 3px double #000;
+}
+
+h1 {
+  margin: 0;
+  font-size: 28px;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+}
+
+#map {
+  height: 90vh;
+  width: 75%;
+  border-right: 2px dashed #888;
+}
+
+.sidebar {
+  width: 25%;
+  background-color: #e0e0e0;
+  padding: 10px;
+  box-shadow: inset 2px 2px 5px #aaa;
+  font-size: 14px;
+}
+
+.legend-box {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  margin-right: 5px;
+  border: 1px solid #000;
+}
+
+.ad-space {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #fff8e1;
+  border: 1px dashed #333;
+  text-align: center;
+  font-size: 13px;
+}
+
+footer {
+  background: #ccc;
+  text-align: center;
+  padding: 5px;
+  font-size: 13px;
+  border-top: 2px solid #444;
+}

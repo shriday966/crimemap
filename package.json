@@ -1,0 +1,12 @@
+{
+  "name": "crimemap-scraper",
+  "version": "1.0.0",
+  "description": "CrimeMap India data scraper",
+  "main": "scraper.js",
+  "scripts": {
+    "start": "node scraper.js"
+  },
+  "dependencies": {
+    "axios": "^1.6.0"
+  }
+}

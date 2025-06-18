@@ -1,0 +1,23 @@
+[
+  {
+    "title": "Robbery near Delhi Cantt",
+    "description": "Masked men looted a vehicle at gunpoint.",
+    "latitude": 28.6139,
+    "longitude": 77.2090,
+    "status": "registered"
+  },
+  {
+    "title": "Kidnapping case solved in Bhopal",
+    "description": "Police arrested two suspects, child rescued.",
+    "latitude": 23.2599,
+    "longitude": 77.4126,
+    "status": "convicted"
+  },
+  {
+    "title": "Cyber fraud in Hyderabad",
+    "description": "Fake call center busted, chargesheet filed.",
+    "latitude": 17.3850,
+    "longitude": 78.4867,
+    "status": "chargesheeted"
+  }
+]

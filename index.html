@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CrimeMap India - 90s Edition</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+</head>
+<body>
+  <header>
+    <h1>🗺️ CrimeMap India</h1>
+    <p>Live Crime Map of India — 90s Style 🚨</p>
+  </header>
+
+  <main>
+    <div id="map"></div>
+    <div class="sidebar">
+      <h3>Status Legend</h3>
+      <ul>
+        <li><span class="legend-box" style="background: yellow;"></span> Registered</li>
+        <li><span class="legend-box" style="background: orange;"></span> Arrested</li>
+        <li><span class="legend-box" style="background: blue;"></span> Chargesheeted</li>
+        <li><span class="legend-box" style="background: green;"></span> Convicted</li>
+        <li><span class="legend-box" style="background: red;"></span> Acquitted</li>
+      </ul>
+      <div class="ad-space">
+        <p><b>Ad Space</b> (Coming soon)</p>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>CrimeMap India © 1999–2025 | Open Crime Data | Made with ❤️</p>
+  </footer>
+
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <script src="map.js"></script>
+</body>
+</html>
